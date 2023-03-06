@@ -3,5 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
-images.unoptimized = true
+module.exports = {
+  images: {
+      unoptimized: true
+  }
+}
