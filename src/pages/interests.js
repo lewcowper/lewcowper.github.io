@@ -1,9 +1,9 @@
 import Navbar from '../components/Navbar';
-import AboutContent from '../components/AboutContent'
+import InterestsContent from '../components/InterestsContent'
 import Head from "next/head";
 
-const Home = () => {
-  const pageTitle = 'About';
+const interests = () => {
+  const pageTitle = 'Interests';
 
   return (
     <div>
@@ -12,9 +12,9 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar pageTitle={pageTitle}/>
-      <AboutContent />
+      <InterestsContent />
     </div>
   )
 }
 
-export default Home;
+export default interests;

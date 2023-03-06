@@ -7,7 +7,7 @@ import {FaLinkedinIn, FaGithub, FaStrava, FaGoodreadsG} from 'react-icons/fa';
 
 import self from '../../public/assets/self-s.jpg';
 
-const Navbar = () => {
+const Navbar = ({pageTitle}) => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -15,14 +15,14 @@ const Navbar = () => {
   }
 
   return (
-    <div className='fixed w-full h-20 bg-neutral-100'>
+    <div className='w-full h-20 bg-neutral-100'>
       {/* menu */}
       <div className='flex items-center w-full h-full px-6'>
           <div onClick={handleNav} className='w-12'>
             <MdMenu size={30}/>
           </div>
           <div className='flex-grow text-center'>
-            <h2>Home</h2>
+            <h2>{pageTitle}</h2>
           </div>
           <div  className='w-12'>
 
@@ -60,16 +60,13 @@ const Navbar = () => {
           <div className='flex px-6'>
             <div className='flex-grow'>
               <ul className='text-lg'>
-                <Link href='/'>
-                  <li className='py-4'>Home</li>
-                </Link>
-                <Link href='/'>
+                <Link href='/' onClick={() => setNav(false)}>
                   <li className='py-4'>About</li>
                 </Link>
-                <Link href='/'>
+                <Link href='/projects'>
                   <li className='py-4'>Projects</li>
                 </Link>
-                <Link href='/'>
+                <Link href='/interests'>
                   <li className='py-4'>Interests</li>
                 </Link>
               </ul>
@@ -100,4 +97,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
