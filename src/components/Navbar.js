@@ -5,6 +5,8 @@ import { useState } from 'react';
 import {MdMenu, MdClose} from 'react-icons/md';
 import {FaLinkedinIn, FaGithub, FaStrava, FaGoodreadsG} from 'react-icons/fa';
 
+import self from '../../public/assets/self-s.jpg';
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -75,7 +77,7 @@ const Navbar = () => {
           </div>
           <div className='px-6 pt-6'>
             <div className='w-full justify-center'>
-              <Image src="/../public/assets/self-s.jpg" alt="self" width={150} height={150} className='rounded-full'/>
+              <Image src={self} alt="self" width={150} height={150} className='rounded-full'/>
             </div>
             <div className='flex justify-between items-center py-6'>
               <Link href='https://github.com/lewcowper' target='_blank'>
