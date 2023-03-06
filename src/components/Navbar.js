@@ -61,13 +61,13 @@ const Navbar = ({pageTitle}) => {
             <div className='flex-grow'>
               <ul className='text-lg'>
                 <Link href='/' onClick={() => setNav(false)}>
-                  <li className='py-4'>About</li>
+                  <li className='py-4 hover:font-bold'>About</li>
                 </Link>
-                <Link href='/projects'>
-                  <li className='py-4'>Projects</li>
+                <Link href='/projects' onClick={() => setNav(false)}>
+                  <li className='py-4 hover:font-bold'>Projects</li>
                 </Link>
-                <Link href='/interests'>
-                  <li className='py-4'>Interests</li>
+                <Link href='/interests' onClick={() => setNav(false)}>
+                  <li className='py-4 hover:font-bold'>Interests</li>
                 </Link>
               </ul>
             </div>
