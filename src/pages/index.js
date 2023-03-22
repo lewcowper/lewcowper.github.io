@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='text-blue-500'>
-        Home page
+        Home page test
       </div>
     </>
   )
