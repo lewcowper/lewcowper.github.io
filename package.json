@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next",
+    "build": "next build && next export",
+    "deploy": "next build && touch .next/.nojekyll && git add .next/ && git commit -m \"Deploy\" && git subtree push --prefix .next origin gh-pages"
   },
   "dependencies": {
     "next": "13.2.4",
