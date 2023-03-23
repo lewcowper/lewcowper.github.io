@@ -2,6 +2,9 @@ import Image from 'next/image';
 
 import self from '../../public/assets/images/self-s.jpg';
 
+import cardData from '../../public/assets/data/cards.json';
+import Card from './Card';
+
 const About = () => {
   return (
     <>
@@ -34,31 +37,11 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div>
-          <h3>Languages</h3>
-          <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Frameworks/Libraries</h3>
-          <ul>
-            <li>Spring Boot</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Qualifications</h3>
-          <ul>
-            <li>BE (Mechanical), UNSW Sydney</li>
-            <li>MIT (Computer Science), UNSW Sydney</li>
-          </ul>
-        </div>
+        {cardData.map((card) => {
+          return (
+            <Card card={card} />
+          );
+        })}
       </div>
     </>
   );

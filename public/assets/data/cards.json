@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Languages",
+    "bullets": ["Java", "JavaScript", "HTML", "CSS"]
+  },
+  {
+    "title": "Frameworks/Libraries",
+    "bullets": ["Spring Boot", "React", "Next.js", "Tailwind CSS"]
+  },
+  {
+    "title": "Qualifications",
+    "bullets": ["BE (Mechanical), UNSW", "MIT (Computer Science), UNSW"]
+  }
+]
