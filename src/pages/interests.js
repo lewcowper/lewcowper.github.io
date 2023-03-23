@@ -5,19 +5,19 @@ import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const Home = () => {
+const interests = () => {
   return (
     <>
       <Head>
-        <title>lewcowper - About</title>
+        <title>lewcowper - Interests</title>
         <meta name="description" content="Personal website of Lewis Cowper" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="text-blue-500 text-center">About page placeholder</div>
+      <div className="text-blue-500 text-center">Interests page placeholder</div>
     </>
   );
 }
 
-export default Home;
+export default interests;
