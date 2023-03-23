@@ -36,15 +36,21 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <Link href={'/'}><h1>lewcowper</h1></Link>
+            <Link href={'/'}>
+              <h1>lewcowper</h1>
+            </Link>
           </div>
           <div className="hidden md:flex">
             <NavItems />
           </div>
         </div>
         <div className="flex items-center space-x-4 px-4">
-          <FaLinkedin size={30} />
-          <FaGithub size={30} />
+          <Link href="https://www.linkedin.com/in/lewiscowper/" target="_blank">
+            <FaLinkedin size={30} />
+          </Link>
+          <Link href="https://github.com/lewcowper" target="_blank">
+            <FaGithub size={30} />
+          </Link>
         </div>
       </nav>
       {isOpen && (
