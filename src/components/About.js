@@ -8,7 +8,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className='order-2 md:order-1'>
           <p>
-            I'm Lewis Cowper, a software developer based in Sydney, Australia
+            I'm a software developer based in Sydney, Australia
             with experience in full-stack web development and operating system
             implementation.
           </p>
@@ -35,13 +35,6 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div>
-          <h3>Qualifications</h3>
-          <ul>
-            <li>BE (Mechanical), UNSW Sydney</li>
-            <li>MIT (Computer Science), UNSW Sydney</li>
-          </ul>
-        </div>
-        <div>
           <h3>Languages</h3>
           <ul>
             <li>Java</li>
@@ -57,6 +50,13 @@ const About = () => {
             <li>React</li>
             <li>Next.js</li>
             <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Qualifications</h3>
+          <ul>
+            <li>BE (Mechanical), UNSW Sydney</li>
+            <li>MIT (Computer Science), UNSW Sydney</li>
           </ul>
         </div>
       </div>

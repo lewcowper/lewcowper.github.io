@@ -36,8 +36,8 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <Link href={'/'}>
-              <h1>lewcowper</h1>
+            <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
+              <h1>Lewis Cowper</h1>
             </Link>
           </div>
           <div className="hidden md:flex">
