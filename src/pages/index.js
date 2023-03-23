@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import About from '@/components/About';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,9 +16,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="text-blue-500 text-center">About page placeholder</div>
+      <About />
     </>
   );
-}
+};
 
 export default Home;
