@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-10 flex justify-between bg-gray-100">
-        <div className="flex items-center space-x-4 px-4">
+      <nav className="w-full h-14 flex justify-between bg-gray-100">
+        <div className="flex items-center space-x-8 px-4">
           <div className="md:hidden hover:cursor-pointer">
             {isOpen ? (
               <MdClose size={35} onClick={() => setIsOpen(false)} />
@@ -44,12 +44,12 @@ const Navbar = () => {
             <NavItems setIsOpen={setIsOpen}/>
           </div>
         </div>
-        <div className="flex items-center space-x-4 px-4">
+        <div className="flex items-center space-x-8 px-4">
           <Link href="https://www.linkedin.com/in/lewiscowper/" target="_blank">
-            <FaLinkedin size={30} />
+            <FaLinkedin size={35} />
           </Link>
           <Link href="https://github.com/lewcowper" target="_blank">
-            <FaGithub size={30} />
+            <FaGithub size={35} />
           </Link>
         </div>
       </nav>
