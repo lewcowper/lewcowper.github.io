@@ -41,7 +41,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex">
-            <NavItems />
+            <NavItems setIsOpen={setIsOpen}/>
           </div>
         </div>
         <div className="flex items-center space-x-4 px-4">
@@ -55,7 +55,7 @@ const Navbar = () => {
       </nav>
       {isOpen && (
         <div className="flex md:hidden">
-          <NavItems />
+          <NavItems isOpen={isOpen} setIsOpen={setIsOpen}/>
         </div>
       )}
     </>
