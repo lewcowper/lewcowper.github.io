@@ -27,12 +27,12 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full h-14 flex justify-between bg-gray-100">
-        <div className="flex items-center space-x-8 px-4">
-          <div className="md:hidden hover:cursor-pointer">
+        <div className="flex items-center space-x-4 md:space-x-8 px-4">
+          <div className="md:hidden hover:cursor-pointer text-3xl md:text-4xl">
             {isOpen ? (
-              <MdClose size={35} onClick={() => setIsOpen(false)} />
+              <MdClose onClick={() => setIsOpen(false)} />
             ) : (
-              <MdMenu size={35} onClick={() => setIsOpen(true)} />
+              <MdMenu onClick={() => setIsOpen(true)} />
             )}
           </div>
           <div>
@@ -44,12 +44,12 @@ const Navbar = () => {
             <NavItems setIsOpen={setIsOpen}/>
           </div>
         </div>
-        <div className="flex items-center space-x-8 px-4">
+        <div className="flex items-center space-x-4 md:space-x-8 px-4 text-3xl md:text-4xl">
           <Link href="https://www.linkedin.com/in/lewiscowper/" target="_blank">
-            <FaLinkedin size={35} />
+            <FaLinkedin />
           </Link>
           <Link href="https://github.com/lewcowper" target="_blank">
-            <FaGithub size={35} />
+            <FaGithub />
           </Link>
         </div>
       </nav>

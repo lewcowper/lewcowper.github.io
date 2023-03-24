@@ -9,11 +9,10 @@ const About = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className='order-2 md:order-1'>
+        <div className="order-2 md:order-1">
           <p>
-            I'm a software developer based in Sydney, Australia
-            with experience in full-stack web development and operating system
-            implementation.
+            I'm a software developer based in Sydney, Australia with experience
+            in full-stack web development and operating system implementation.
           </p>
           <p>
             Prior to software development, I accumulated broad experience in
@@ -21,10 +20,15 @@ const About = () => {
             renewable energy and construction industries.
           </p>
           <p>
-            Outside of work, I enjoy reading, running and strength training.
+            In my spare time, I enjoy reading and running.
           </p>
+          <div className="flex flex-wrap gap-4 justify-evenly">
+            {cardData.map((card) => {
+              return <Card card={card} />;
+            })}
+          </div>
         </div>
-        <div className='order-1 md:order-2'>
+        <div className="order-1 md:order-2">
           <Image
             src={self}
             alt="self"
@@ -34,14 +38,6 @@ const About = () => {
             className="rounded-full"
           />
         </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3">
-        {cardData.map((card) => {
-          return (
-            <Card card={card} />
-          );
-        })}
       </div>
     </>
   );
