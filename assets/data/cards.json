@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Languages",
+    "bullets": ["Java", "JavaScript", "HTML", "CSS"]
+  },
+  {
+    "title": "Frameworks/Libraries",
+    "bullets": ["Spring Boot", "React", "Next.js", "Tailwind CSS"]
+  }
+]
