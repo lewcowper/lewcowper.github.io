@@ -8,8 +8,8 @@ import Card from './Card';
 const About = () => {
   return (
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl">
-        <div className="order-2 md:order-1 p-4 md:col-span-3">
+      <div className="flex flex-wrap md:flex-nowrap max-w-5xl justify-center">
+        <div className="order-2 md:order-1 p-4 grow-1">
           <p className='text-center sm:text-justify'>
             I'm a software developer based in Sydney, Australia with experience
             in full-stack web development and operating system implementation.
@@ -26,14 +26,14 @@ const About = () => {
           </p>
           <p className='text-center sm:text-justify'>In my spare time, I enjoy reading and running.</p>
         </div>
-        <div className="order-1 md:order-2 flex justify-center p-4 md:col-span-2">
-          <div>
+        <div className="order-1 md:order-2 flex justify-center p-4 grow-0">
+          <div className='min-w-max'>
             <Image
               src={self}
               alt="self"
               priority={true}
-              width={270}
-              height={270}
+              width={320}
+              height={320}
               className="rounded-full"
             />
           </div>
