@@ -27,16 +27,16 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full h-14 flex justify-center bg-gray-100">
-        <nav className="w-full h-14 flex justify-between bg-gray-300 max-w-4xl">
-          <div className="flex items-center space-x-4 sm:space-x-8 px-4">
-            <div className="md:hidden hover:cursor-pointer text-3xl sm:text-4xl">
+        <nav className="w-full h-14 flex justify-between bg-gray-300 max-w-5xl">
+          <div className="flex items-center px-4">
+            <div className="md:hidden hover:cursor-pointer text-4xl sm:text-5xl pr-4">
               {isOpen ? (
                 <MdClose onClick={() => setIsOpen(false)} />
               ) : (
                 <MdMenu onClick={() => setIsOpen(true)} />
               )}
             </div>
-            <div>
+            <div className='md:pr-8'>
               <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
                 <h1>Lewis Cowper</h1>
               </Link>

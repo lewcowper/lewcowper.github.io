@@ -7,9 +7,9 @@ import Card from './Card';
 
 const About = () => {
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl">
-        <div className="order-2 md:order-1">
+    <div className="flex justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl">
+        <div className="order-2 md:order-1 p-4 md:col-span-3">
           <p>
             I'm a software developer based in Sydney, Australia with experience
             in full-stack web development and operating system implementation.
@@ -19,27 +19,27 @@ const About = () => {
             project management, commercialisation and engineering roles in the
             renewable energy and construction industries.
           </p>
-          <p>
-            In my spare time, I enjoy reading and running.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-evenly">
+          <p>In my spare time, I enjoy reading and running.</p>
+          <div className="flex flex-wrap gap-4 justify-evenly p-4">
             {cardData.map((card) => {
               return <Card card={card} />;
             })}
           </div>
         </div>
-        <div className="order-1 md:order-2">
-          <Image
-            src={self}
-            alt="self"
-            priority={true}
-            width={320}
-            height={320}
-            className="rounded-full"
-          />
+        <div className="order-1 md:order-2 flex justify-center p-4 md:col-span-2">
+          <div>
+            <Image
+              src={self}
+              alt="self"
+              priority={true}
+              width={320}
+              height={320}
+              className="rounded-full"
+            />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
