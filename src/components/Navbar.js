@@ -26,36 +26,41 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-14 flex justify-between bg-gray-100">
-        <div className="flex items-center space-x-4 md:space-x-8 px-4">
-          <div className="md:hidden hover:cursor-pointer text-3xl md:text-4xl">
-            {isOpen ? (
-              <MdClose onClick={() => setIsOpen(false)} />
-            ) : (
-              <MdMenu onClick={() => setIsOpen(true)} />
-            )}
+      <div className="w-full h-14 flex justify-center bg-gray-100">
+        <nav className="w-full h-14 flex justify-between bg-gray-300 max-w-4xl">
+          <div className="flex items-center space-x-4 sm:space-x-8 px-4">
+            <div className="md:hidden hover:cursor-pointer text-3xl sm:text-4xl">
+              {isOpen ? (
+                <MdClose onClick={() => setIsOpen(false)} />
+              ) : (
+                <MdMenu onClick={() => setIsOpen(true)} />
+              )}
+            </div>
+            <div>
+              <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
+                <h1>Lewis Cowper</h1>
+              </Link>
+            </div>
+            <div className="hidden md:flex">
+              <NavItems setIsOpen={setIsOpen} />
+            </div>
           </div>
-          <div>
-            <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
-              <h1>Lewis Cowper</h1>
+          <div className="flex items-center space-x-4 sm:space-x-8 px-4 text-3xl sm:text-4xl">
+            <Link
+              href="https://www.linkedin.com/in/lewiscowper/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link href="https://github.com/lewcowper" target="_blank">
+              <FaGithub />
             </Link>
           </div>
-          <div className="hidden md:flex">
-            <NavItems setIsOpen={setIsOpen}/>
-          </div>
-        </div>
-        <div className="flex items-center space-x-4 md:space-x-8 px-4 text-3xl md:text-4xl">
-          <Link href="https://www.linkedin.com/in/lewiscowper/" target="_blank">
-            <FaLinkedin />
-          </Link>
-          <Link href="https://github.com/lewcowper" target="_blank">
-            <FaGithub />
-          </Link>
-        </div>
-      </nav>
+        </nav>
+      </div>
       {isOpen && (
         <div className="flex md:hidden">
-          <NavItems isOpen={isOpen} setIsOpen={setIsOpen}/>
+          <NavItems isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       )}
     </>

@@ -8,7 +8,7 @@ import Card from './Card';
 const About = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl">
         <div className="order-2 md:order-1">
           <p>
             I'm a software developer based in Sydney, Australia with experience
