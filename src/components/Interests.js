@@ -12,7 +12,7 @@ const Interests = () => {
     <div className="flex justify-center">
       <div className="max-w-5xl">
         <SelectedBook book={selectedBook} />
-        <div className='flex justify-center'>
+        <div className="flex justify-center">
           <div className="max-w-lg md:max-w-4xl">
             <div className="grid grid-cols-4 md:grid-cols-6 grid-rows-3 md:grid-rows-2 gap-4 px-4">
               {bookData.map((book) => {

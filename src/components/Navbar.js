@@ -36,9 +36,9 @@ const Navbar = () => {
                 <MdMenu onClick={() => setIsOpen(true)} />
               )}
             </div>
-            <div className='md:pr-8'>
+            <div className="md:pr-8">
               <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
-                <h1>Lewis Cowper</h1>
+                <h1 className='font-light'>Lewis Cowper</h1>
               </Link>
             </div>
             <div className="hidden md:flex">

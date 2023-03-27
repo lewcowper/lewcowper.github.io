@@ -5,17 +5,17 @@ const NavItems = ({isOpen, setIsOpen}) => {
     <ul className="h-14 flex items-center space-x-8 px-4">
       <li>
         <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
-          About
+          <h3>About</h3>
         </Link>
       </li>
       <li>
         <Link href={'/projects'} onClick={() => isOpen && setIsOpen(false)}>
-          Projects
+          <h3>Projects</h3>
         </Link>
       </li>
       <li>
         <Link href={'/interests'} onClick={() => isOpen && setIsOpen(false)}>
-          Interests
+          <h3>Interests</h3>
         </Link>
       </li>
     </ul>
