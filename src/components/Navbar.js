@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const mdBreakpoint = 768;
 
-const Navbar = () => {
+const Navbar = ({activePage}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Monitor window size to close the menu if the screen exceeds the md breakpoint (768px)
@@ -38,11 +38,15 @@ const Navbar = () => {
             </div>
             <div className="md:pr-8">
               <Link href={'/'} onClick={() => isOpen && setIsOpen(false)}>
-                <h1 className='font-light'>Lewis Cowper</h1>
+                <h1 className="font-light">Lewis Cowper</h1>
               </Link>
             </div>
             <div className="hidden md:flex">
-              <NavItems setIsOpen={setIsOpen} />
+              <NavItems
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                activePage={activePage}
+              />
             </div>
           </div>
           <div className="flex items-center space-x-4 sm:space-x-8 px-4 text-3xl sm:text-4xl">
@@ -59,8 +63,12 @@ const Navbar = () => {
         </nav>
       </div>
       {isOpen && (
-        <div className="flex md:hidden">
-          <NavItems isOpen={isOpen} setIsOpen={setIsOpen} />
+        <div className="flex h-14 bg-gray-300 md:hidden">
+          <NavItems
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            activePage={activePage}
+          />
         </div>
       )}
     </>
