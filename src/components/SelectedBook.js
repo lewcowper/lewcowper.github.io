@@ -10,11 +10,11 @@ const SelectedBook = ({ book }) => {
     <div className="text-center p-4">
       <div>
         <div>
-          <h2 className="font-bold">
+          <h2 className="font-light italic">
             {book.subtitle ? book.title + ': ' + book.subtitle : book.title}
           </h2>
         </div>
-        <h3>
+        <h3 className='font-light'>
           <div>{book.author}</div>
         </h3>
       </div>

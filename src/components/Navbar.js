@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="w-full h-14 flex justify-center bg-gray-100">
         <nav className="w-full h-14 flex justify-between bg-gray-300 max-w-5xl">
           <div className="flex items-center px-4">
-            <div className="md:hidden hover:cursor-pointer text-4xl sm:text-5xl pr-4">
+            <div className="md:hidden hover:cursor-pointer text-4xl pr-4">
               {isOpen ? (
                 <MdClose onClick={() => setIsOpen(false)} />
               ) : (
