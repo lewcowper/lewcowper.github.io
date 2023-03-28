@@ -25,9 +25,9 @@ const Navbar = ({activePage}) => {
   }, []);
 
   return (
-    <>
-      <div className="w-full h-14 flex justify-center bg-gray-100">
-        <nav className="w-full h-14 flex justify-between bg-gray-300 max-w-5xl">
+    <div className='text-neutral-700'>
+      <div className="w-full h-14 flex justify-center bg-neutral-100">
+        <nav className="w-full h-14 flex justify-between max-w-5xl">
           <div className="flex items-center px-4">
             <div className="md:hidden hover:cursor-pointer text-4xl pr-4">
               {isOpen ? (
@@ -63,7 +63,7 @@ const Navbar = ({activePage}) => {
         </nav>
       </div>
       {isOpen && (
-        <div className="flex h-14 bg-gray-300 md:hidden">
+        <div className="flex h-14 bg-neutral-100 md:hidden">
           <NavItems
             isOpen={isOpen}
             setIsOpen={setIsOpen}
@@ -71,7 +71,7 @@ const Navbar = ({activePage}) => {
           />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

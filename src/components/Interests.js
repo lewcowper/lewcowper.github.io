@@ -9,7 +9,7 @@ const Interests = () => {
   const [selectedBook, setSelectedBook] = useState(bookData[0]);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center text-neutral-700">
       <div className="max-w-5xl">
         <SelectedBook book={selectedBook} />
         <div className="flex justify-center">

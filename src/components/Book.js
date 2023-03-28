@@ -4,7 +4,13 @@ const imagePath = '/assets/images/books/';
 
 const Book = ({ book, selectedBook }) => {
   return (
-    <div className={selectedBook.id === book.id ? 'border-4 border-indigo-500' : 'border-y-4 border-transparent hover:border-b-indigo-500 m-1'}>
+    <div
+      className={
+        selectedBook.id === book.id
+          ? 'border-4 border-neutral-700 grayscale'
+          : 'border-y-4 border-transparent m-1 hover:grayscale'
+      }
+    >
       <Image
         src={imagePath + book.cover + '.jpg'}
         alt={book.cover}

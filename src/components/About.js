@@ -12,7 +12,7 @@ const About = () => {
   let qualificationsCardId = 0;
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center text-neutral-700">
       <div className="flex flex-wrap md:flex-nowrap max-w-5xl justify-center">
         <div className="order-2 md:order-1 p-4 grow-1">
           <p className="text-center sm:text-justify">

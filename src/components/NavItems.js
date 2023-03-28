@@ -12,8 +12,8 @@ const NavItems = ({ isOpen, setIsOpen, activePage }) => {
               href={navItem.link}
               onClick={() => isOpen && setIsOpen(false)}
             >
-              <div className="h-14 flex items-center border-y-4 border-transparent hover:border-b-indigo-500">
-                <h2 className={activePage === navItem.id ? 'text-indigo-500' : ''}>{navItem.title}</h2>
+              <div className={activePage === navItem.id ? "h-14 flex items-center border-y-4 border-transparent border-b-neutral-700" : "h-14 flex items-center border-y-4 border-transparent hover:border-b-neutral-700"}>
+                <h2>{navItem.title}</h2>
               </div>
             </Link>
           </li>
