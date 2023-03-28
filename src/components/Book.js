@@ -8,7 +8,7 @@ const Book = ({ book, selectedBook }) => {
       className={
         selectedBook.id === book.id
           ? 'border-4 border-neutral-700 grayscale'
-          : 'border-y-4 border-transparent m-1 hover:grayscale'
+          : 'hover:border-4 border-transparent m-1 hover:border-neutral-700'
       }
     >
       <Image
