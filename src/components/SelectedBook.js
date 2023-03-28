@@ -20,7 +20,7 @@ const SelectedBook = ({ book }) => {
           </h3>
         </div>
         <div className="flex justify-center">
-          <div className="w-56 md:w-72 m-4">
+          <div className="w-1/2 m-4">
             <Image
               src={imagePath + book.cover + '.jpg'}
               alt={book.cover}
