@@ -11,6 +11,7 @@ const Book = ({ book, selectedBook }) => {
         width={356}
         height={540}
         quality={100}
+        priority={true}
       />
     </div>
   );
