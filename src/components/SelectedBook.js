@@ -14,7 +14,7 @@ const SelectedBook = ({ book }) => {
             {book.subtitle ? book.title + ': ' + book.subtitle : book.title}
           </h2>
         </div>
-        <h3 className='font-light'>
+        <h3 className="font-light">
           <div>{book.author}</div>
         </h3>
       </div>
@@ -23,7 +23,7 @@ const SelectedBook = ({ book }) => {
           <Image
             src={imagePath + book.cover + '.jpg'}
             alt={book.cover}
-            width={180}
+            width={178}
             height={270}
             quality={100}
           />
@@ -33,17 +33,17 @@ const SelectedBook = ({ book }) => {
         <p>{book.note}</p>
       </div> */}
       <div>
-        <p>
-          {'Publisher, image source: '}
+        <div className='inline-flex flex-wrap justify-center'>
+          <p>{'Publisher, image source: '}</p>
           <Link
             href={book.link}
             target="_blank"
             className="inline-flex items-center hover:underline"
           >
-            <div className="pr-1">{book.publisher}</div>{' '}
+            <div className="px-1 font-light">{book.publisher}</div>
             <MdOutlineOpenInNew className="text-md" />
           </Link>
-        </p>
+        </div>
       </div>
     </div>
   );

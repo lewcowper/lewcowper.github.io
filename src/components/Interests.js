@@ -14,11 +14,15 @@ const Interests = () => {
         <SelectedBook book={selectedBook} />
         <div className="flex justify-center">
           <div className="max-w-lg md:max-w-4xl">
-            <div className="grid grid-cols-4 md:grid-cols-6 grid-rows-3 md:grid-rows-2 gap-4 px-4">
+            <div className="grid grid-cols-4 md:grid-cols-6 grid-rows-3 md:grid-rows-2 gap-x-2 md:gap-x-4 gap-y-1 md:gap-y-2 px-4">
               {bookData.map((book) => {
                 return (
                   <button onClick={() => setSelectedBook(book)}>
-                    <Book key={book.id} book={book} />
+                    <Book
+                      key={book.id}
+                      book={book}
+                      selectedBook={selectedBook}
+                    />
                   </button>
                 );
               })}
