@@ -8,6 +8,9 @@ import qualificationsCardData from '../../public/assets/data/qualifications-card
 import QualificationsCard from './QualificationsCard';
 
 const About = () => {
+  let softwareCardId = 0;
+  let qualificationsCardId = 0;
+
   return (
     <div className="flex justify-center">
       <div className="flex flex-wrap md:flex-nowrap max-w-5xl justify-center">
@@ -18,7 +21,7 @@ const About = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-evenly p-4">
             {softwareCardData.map((card) => {
-              return <SoftwareCard card={card} />;
+              return <SoftwareCard card={card} key={softwareCardId++}/>;
             })}
           </div>
           <p className="text-center sm:text-justify mb-2">
@@ -28,7 +31,7 @@ const About = () => {
           </p>
           <div className="flex justify-center p-4">
             {qualificationsCardData.map((card) => {
-              return <QualificationsCard card={card} />;
+              return <QualificationsCard card={card} key={qualificationsCardId++}/>;
             })}
           </div>
           <p className="text-center sm:text-justify mb-2">

@@ -26,6 +26,7 @@ const SelectedBook = ({ book }) => {
             width={178}
             height={270}
             quality={100}
+            priority={true}
           />
         </div>
       </div>
