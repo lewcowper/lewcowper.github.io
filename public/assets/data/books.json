@@ -13,6 +13,17 @@
   {
     "id": 1,
     "genre": "Biography",
+    "title": "The Path to Power",
+    "subtitle": "The Years of Lyndon Johnson I",
+    "author": "Robert A. Caro",
+    "cover": "lbj-i",
+    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel eleifend diam. Donec nec sapien vitae mauris ornare condimentum ut sit amet ligula. Proin tincidunt sapien ipsum, vel luctus tellus mollis id. Integer ornare, libero eget semper tempus, lectus nibh tincidunt velit, sit amet elementum ipsum orci et elit.",
+    "publisher": "Penguin Random House",
+    "link": "https://www.penguinrandomhouse.com/books/24311/the-path-to-power-by-robert-a-caro/"
+  },
+  {
+    "id": 2,
+    "genre": "Biography",
     "title": "Alexander Hamilton",
     "subtitle": "",
     "author": "Ron Chernow",
@@ -22,7 +33,7 @@
     "link": "https://www.penguinrandomhouse.com/books/292945/alexander-hamilton-by-ron-chernow/"
   },
   {
-    "id": 2,
+    "id": 3,
     "genre": "Biography",
     "title": "Titan",
     "subtitle": "The Life of John D. Rockefeller, Sr.",
@@ -33,7 +44,7 @@
     "link": "https://www.penguinrandomhouse.com/books/26804/titan-by-ron-chernow/"
   },
   {
-    "id": 3,
+    "id": 4,
     "genre": "Biography",
     "title": "Washington",
     "subtitle": "A Life",
@@ -44,7 +55,7 @@
     "link": "https://www.penguinrandomhouse.com/books/297691/washington-by-ron-chernow/"
   },
   {
-    "id": 4,
+    "id": 5,
     "genre": "Biography",
     "title": "Grant",
     "subtitle": "",
@@ -53,17 +64,6 @@
     "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel eleifend diam. Donec nec sapien vitae mauris ornare condimentum ut sit amet ligula. Proin tincidunt sapien ipsum, vel luctus tellus mollis id. Integer ornare, libero eget semper tempus, lectus nibh tincidunt velit, sit amet elementum ipsum orci et elit.",
     "publisher": "Penguin Random House",
     "link": "https://www.penguinrandomhouse.com/books/311248/grant-by-ron-chernow/"
-  },
-  {
-    "id": 5,
-    "genre": "Biography",
-    "title": "Truman",
-    "subtitle": "",
-    "author": "David McCullough",
-    "cover": "truman",
-    "note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel eleifend diam. Donec nec sapien vitae mauris ornare condimentum ut sit amet ligula. Proin tincidunt sapien ipsum, vel luctus tellus mollis id. Integer ornare, libero eget semper tempus, lectus nibh tincidunt velit, sit amet elementum ipsum orci et elit.",
-    "publisher": "Simon & Schuster",
-    "link": "https://www.simonandschuster.com/books/Truman/David-McCullough/9780671869205"
   },
   {
     "id": 6,
