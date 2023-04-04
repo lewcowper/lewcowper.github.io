@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import Projects from '@/components/Projects';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +16,7 @@ const projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar activePage={1}/>
-      <div className="text-blue-500 text-center">Projects page placeholder</div>
+      <Projects />
     </>
   );
 }
