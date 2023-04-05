@@ -24,7 +24,7 @@ const About = () => {
               return <SoftwareCard card={card} key={softwareCardId++}/>;
             })}
           </div>
-          <p className="text-center sm:text-justify mb-2">
+          <p className="text-center sm:text-justify">
             Prior to software development, I accumulated broad experience in
             project management, commercialisation and engineering roles in the
             renewable energy and construction industries.
@@ -34,7 +34,7 @@ const About = () => {
               return <QualificationsCard card={card} key={qualificationsCardId++}/>;
             })}
           </div>
-          <p className="text-center sm:text-justify mb-2">
+          <p className="text-center sm:text-justify">
             In my spare time, I enjoy reading and running. To contact me, please send me a message on LinkedIn.
           </p>
         </div>
