@@ -35,7 +35,7 @@ const About = () => {
             })}
           </div>
           <p className="text-center sm:text-justify mb-2">
-            In my spare time, I enjoy reading and running.
+            In my spare time, I enjoy reading and running. To contact me, please send me a message on LinkedIn.
           </p>
         </div>
         <div className="order-1 md:order-2 flex justify-center p-4 grow-0">
