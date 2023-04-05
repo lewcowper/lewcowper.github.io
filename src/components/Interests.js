@@ -11,7 +11,7 @@ const Interests = () => {
   return (
     <div>
       <div className="flex justify-center text-neutral-700">
-        <div className="grid grid-cols-2 max-w-5xl bg-neutral-100 rounded-lg my-2">
+        <div className="grid grid-cols-2 max-w-5xl bg-neutral-100 rounded-lg my-4">
           <button
             className={
               showReading
