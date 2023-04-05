@@ -25,7 +25,7 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
         <p>Frameworks/Libraries: {projectData.frameworksLibraries}</p>
       )}
       <div className="flex justify-between py-2">
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
           <div className="flex text-3xl gap-2">
             {langIcons.map((icon) => {
               return <div key={id++}>{icon}</div>;
