@@ -11,7 +11,7 @@
     "id": 1,
     "title": "Meal Recommendation System",
     "description": "A full-stack web application which enables users to explore and share meal recipes.",
-    "details": ["To be completed. Describe technology stack.", "Completed for COMP9900 \"Information Technology Project\" at UNSW."],
+    "details": ["To be completed. Describe technology stack.", "Completed for COMP9900 Information Technology Project at UNSW."],
     "languages": ["JavaScript", "HTML", "CSS"],
     "frameworksLibraries": ["React", "Bootstrap"]
   },
@@ -19,7 +19,7 @@
     "id": 2,
     "title": "Simple Operating System (SOS)",
     "description": "Implementation of a simple microkernel-based operating system atop the seL4 microkernel.",
-    "details": ["To be completed. Take from project outline.", "Completed for COMP9242 \"Advanced Operating Systems\" (AOS) at UNSW."],
+    "details": ["To be completed. Take from project outline.", "Completed for COMP9242 Advanced Operating Systems (AOS) at UNSW."],
     "languages": ["C"],
     "frameworksLibraries": []
   }
