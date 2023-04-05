@@ -9,7 +9,7 @@ const SelectedBook = ({ book }) => {
   return (
     <div className="">
       <div className="text-center">
-        <div className='mt-4'>
+        <div className='px-4'>
           <div>
             <h2 className="font-light italic">
               {book.subtitle ? book.title + ': ' + book.subtitle : book.title}
@@ -32,12 +32,12 @@ const SelectedBook = ({ book }) => {
           </div>
         </div>
         <div>
-          <div className="inline-flex flex-wrap justify-center">
+          <div className="inline-flex flex-wrap justify-center px-4">
             <p>{'Image credit: '}</p>
             <Link
               href={book.link}
               target="_blank"
-              className="inline-flex items-center mb-4 hover:underline"
+              className="inline-flex items-center hover:underline"
             >
               <div className="px-1 font-light">{book.publisher}</div>
               <MdOutlineOpenInNew className="text-md" />
