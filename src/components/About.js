@@ -12,9 +12,9 @@ const About = () => {
   let qualificationsCardId = 0;
 
   return (
-    <div className="flex justify-center text-neutral-700">
+    <div className="flex justify-center text-neutral-700 my-4">
       <div className="flex flex-wrap md:flex-nowrap max-w-5xl justify-center">
-        <div className="order-2 md:order-1 p-4 grow-1">
+        <div className="order-2 md:order-1 px-4 grow-1">
           <p className="text-center sm:text-justify">
             I'm a software developer based in Sydney, Australia with experience
             in full-stack web development and operating system implementation.
@@ -38,7 +38,7 @@ const About = () => {
             In my spare time, I enjoy reading and running. To contact me, please send me a message on LinkedIn.
           </p>
         </div>
-        <div className="order-1 md:order-2 flex justify-center p-4 grow-0">
+        <div className="order-1 md:order-2 flex justify-center px-4 grow-0 mb-4">
           <div className="min-w-max">
             <Image
               src={self}
