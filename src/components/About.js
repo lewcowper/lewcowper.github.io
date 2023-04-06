@@ -18,10 +18,13 @@ const About = () => {
           <p className="text-center sm:text-justify">
             I'm a software developer based in Sydney, Australia with experience
             in full-stack web development and operating system implementation.
+            Within any team, I'm a passionate and motivated member who is eager
+            to solve complex problems and deliver high-quality products to
+            ambitious project schedules.
           </p>
           <div className="flex flex-wrap gap-4 justify-evenly p-4">
             {softwareCardData.map((card) => {
-              return <SoftwareCard card={card} key={softwareCardId++}/>;
+              return <SoftwareCard card={card} key={softwareCardId++} />;
             })}
           </div>
           <p className="text-center sm:text-justify">
@@ -31,11 +34,14 @@ const About = () => {
           </p>
           <div className="flex justify-center p-4">
             {qualificationsCardData.map((card) => {
-              return <QualificationsCard card={card} key={qualificationsCardId++}/>;
+              return (
+                <QualificationsCard card={card} key={qualificationsCardId++} />
+              );
             })}
           </div>
           <p className="text-center sm:text-justify">
-            In my spare time, I enjoy reading and running. To contact me, please send me a message on LinkedIn.
+            In my spare time, I enjoy reading and running. To contact me, please
+            send me a message on LinkedIn.
           </p>
         </div>
         <div className="order-1 md:order-2 flex justify-center px-4 grow-0 mb-4">
