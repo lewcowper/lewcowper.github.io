@@ -48,7 +48,7 @@ const SelectedBook = ({ book }) => {
       <div className="rounded-lg w-fit bg-neutral-100 m-4">
         <div className="px-4 py-2">
           <h3>Comments</h3>
-          <p>{book.note}</p>
+          <p>{book.note.replaceAll('--', '\u2014')}</p>
         </div>
       </div>
     </div>
