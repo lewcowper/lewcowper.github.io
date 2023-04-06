@@ -19,10 +19,10 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
         )}
       </div>
       {isShowingMore && projectData.languages.length > 0 && (
-        <p>Languages: {projectData.languages}</p>
+        <p>Languages: {projectData.languages.join(', ')}</p>
       )}
       {isShowingMore && projectData.frameworksLibraries.length > 0 && (
-        <p>Frameworks/Libraries: {projectData.frameworksLibraries}</p>
+        <p>Frameworks/Libraries: {projectData.frameworksLibraries.join(', ')}</p>
       )}
       <div className="flex justify-between py-2">
         <div className="flex flex-wrap gap-x-6 gap-y-2">
