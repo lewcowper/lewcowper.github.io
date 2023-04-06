@@ -30,12 +30,12 @@ const Running = () => {
         <div className="flex flex-wrap md:flex-nowrap justify-center max-w-5xl">
           <p className="px-4">
             In my youth, I enjoyed competing in track & field athletics and
-            playing Australia rules football. While I no longer play these
-            sports, I still love running. Road running is my favourite form of
-            exercise and I enjoy training to improve my 5K and 10K times. When I
-            can, I enjoy running along parts of the Bondi to Coogee coastal
-            track in Sydney's Eastern Suburbs. The photos on this page show some
-            of the scenic parts of this track and their locations.
+            playing Australian rules football. While I no longer play any
+            organised sports, I still love running. Road running is my favourite
+            form of exercise and I enjoy training to improve my 5K and 10K
+            times. When I can, I enjoy running along parts of the Bondi to
+            Coogee coastal track in Sydney's Eastern Suburbs. The photos on this
+            page show some scenic parts of this track.
           </p>
         </div>
       </div>
