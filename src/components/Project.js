@@ -9,9 +9,12 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
     <div className="py-2 px-4 bg-neutral-100 rounded-lg">
       <h3>{projectData.title}</h3>
       <p>{projectData.description}</p>
+      {isShowingMore && (
+        <hr class="h-px my-2 bg-neutral-700 border-0"></hr>
+      )}
       <div>
         {isShowingMore && (
-          <ul className="pt-2 list-disc pl-4">
+          <ul className="list-disc pl-4">
             {projectData.details.map((detail) => {
               return <li className="pb-2">{detail}</li>;
             })}
@@ -22,9 +25,14 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
         <p>Languages: {projectData.languages.join(', ')}</p>
       )}
       {isShowingMore && projectData.frameworksLibraries.length > 0 && (
-        <p>Frameworks/Libraries: {projectData.frameworksLibraries.join(', ')}</p>
+        <p>
+          Frameworks/Libraries: {projectData.frameworksLibraries.join(', ')}
+        </p>
       )}
-      <div className="flex justify-between py-2">
+      {isShowingMore && (
+        <hr class="h-px my-2 bg-neutral-700 border-0"></hr>
+      )}
+      <div className="flex justify-between p-2">
         <div className="flex flex-wrap gap-x-6 gap-y-2">
           <div className="flex text-3xl gap-2">
             {langIcons.map((icon) => {
@@ -38,7 +46,7 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
           </div>
         </div>
         <button
-          className="hover:underline font-medium"
+          className="font-medium"
           onClick={() => setIsShowingMore(!isShowingMore)}
         >
           {isShowingMore ? 'Show less' : 'Show more'}
