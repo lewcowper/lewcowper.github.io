@@ -9,18 +9,16 @@ const SelectedBook = ({ book }) => {
   return (
     <div className="">
       <div className="text-center">
-        <div className='px-4'>
-          <div>
-            <h2 className="font-light italic">
-              {book.subtitle ? book.title + ': ' + book.subtitle : book.title}
-            </h2>
-          </div>
+        <div className="px-4 pt-4 md:pt-0">
+          <h2 className="font-light italic">
+            {book.subtitle ? book.title + ': ' + book.subtitle : book.title}
+          </h2>
           <h3 className="font-light">
             <div>{book.author}</div>
           </h3>
         </div>
         <div className="flex justify-center">
-          <div className="w-56 m-4">
+          <div className="w-48 m-4">
             <Image
               src={imagePath + book.cover + '.jpg'}
               alt={book.cover}
