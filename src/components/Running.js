@@ -28,7 +28,7 @@ const Running = () => {
     <>
       <div className="flex justify-center text-neutral-700">
         <div className="flex flex-wrap md:flex-nowrap justify-center max-w-5xl">
-          <p className="px-4">
+          <p className="px-4 text-justify">
             In my youth, I enjoyed competing in track & field athletics and
             playing Australian rules football. While I no longer play any
             organised sports, I still love running. Road running is my favourite

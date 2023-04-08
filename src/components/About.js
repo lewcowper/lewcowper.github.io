@@ -15,7 +15,7 @@ const About = () => {
     <div className="flex justify-center text-neutral-700 my-4">
       <div className="flex flex-wrap md:flex-nowrap max-w-5xl justify-center">
         <div className="order-2 md:order-1 px-4 grow-1">
-          <p className="text-center sm:text-justify">
+          <p className="text-justify">
             I'm a software developer based in Sydney, Australia with experience
             in full-stack web development and operating system implementation.
             Within any team, I'm a passionate and motivated member who is eager
@@ -27,7 +27,7 @@ const About = () => {
               return <SoftwareCard card={card} key={softwareCardId++} />;
             })}
           </div>
-          <p className="text-center sm:text-justify">
+          <p className="text-justify">
             Prior to software development, I accumulated broad experience in
             project management, commercialisation and engineering roles in the
             renewable energy and construction industries.
@@ -39,7 +39,7 @@ const About = () => {
               );
             })}
           </div>
-          <p className="text-center sm:text-justify">
+          <p className="text-justify">
             In my spare time, I enjoy reading and running. To contact me, please
             send me a message on LinkedIn.
           </p>
