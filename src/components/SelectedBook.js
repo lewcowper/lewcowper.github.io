@@ -45,8 +45,12 @@ const SelectedBook = ({ book }) => {
       </div>
       <div className="rounded-lg w-fit bg-neutral-100 m-4">
         <div className="px-4 py-2">
-          <h3>Overview</h3>
-          <p className='text-justify'>{book.note.replaceAll('--', '\u2014')}</p>
+          <div className="flex justify-between align-middle">
+            <h2>My Overview</h2>
+            <div>{book.genre}</div>
+            
+          </div>
+          <p className="text-justify">{book.note.replaceAll('--', '\u2014')}</p>
         </div>
       </div>
     </div>
