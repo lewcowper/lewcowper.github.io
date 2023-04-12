@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import self from '../../public/assets/images/self-s.jpg';
 
@@ -17,9 +18,12 @@ const About = () => {
         <div className="order-2 md:order-1 px-4 grow-1">
           <p className="text-justify">
             I'm a software developer based in Sydney, Australia with experience
-            in full-stack web development and operating system implementation.
-            Within any team, I'm a passionate and motivated member who is eager
-            to solve complex problems and deliver high-quality products to
+            in full-stack web development and operating system implementation (
+            <Link href="/projects" className="hover:underline">
+              see more
+            </Link>
+            ). Within any team, I'm a passionate and motivated member who is
+            eager to solve complex problems and deliver high-quality products to
             ambitious project schedules.
           </p>
           <div className="flex flex-wrap gap-4 justify-evenly p-4">
@@ -40,8 +44,11 @@ const About = () => {
             })}
           </div>
           <p className="text-justify">
-            In my spare time, I enjoy reading and running. To contact me, please
-            send me a message on LinkedIn.
+            In my spare time, I enjoy reading and running (
+            <Link href="/interests" className="hover:underline">
+              see more
+            </Link>
+            ). To contact me, please send me a message on LinkedIn.
           </p>
         </div>
         <div className="order-1 md:order-2 flex justify-center px-4 grow-0 mb-4">
