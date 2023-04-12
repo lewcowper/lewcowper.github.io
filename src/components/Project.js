@@ -7,7 +7,7 @@ const Project = ({ projectData, langIcons, libFraIcons }) => {
 
   return (
     <div className="py-2 px-4 bg-neutral-100 rounded-lg">
-      <h3>{projectData.title}</h3>
+      <h2>{projectData.title}</h2>
       <p className="text-justify">{projectData.description}</p>
       {isShowingMore && <hr class="h-px my-2 bg-neutral-700 border-0"></hr>}
       <div>
