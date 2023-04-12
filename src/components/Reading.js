@@ -7,10 +7,10 @@ const Reading = ({ bookData, selectedBook, setSelectedBook }) => {
       <div className="flex justify-center text-neutral-700">
         <div className="flex flex-wrap md:flex-nowrap justify-center max-w-5xl">
           <p className="px-4 text-justify">
-            I enjoy popular history books about periods of
-            significant social, political and technological change, and detailed
-            biographies about individuals involved in such change. I also enjoy
-            popular science, business books and interesting memoirs. Here are
+            I enjoy popular history books about periods of significant social,
+            political and technological change, and detailed biographies about
+            individuals involved in such change. I also enjoy popular science,
+            business books and interesting memoirs. Here are my overviews of
             some of my favourites.
           </p>
         </div>

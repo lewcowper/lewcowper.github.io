@@ -31,11 +31,11 @@ const Running = () => {
           <p className="px-4 text-justify">
             In my youth, I enjoyed competing in track & field athletics and
             playing Australian rules football. While I no longer play any
-            organised sports, I still love running. Road running is my favourite
-            form of exercise and I enjoy training to improve my 5K and 10K
-            times. When I can, I enjoy running along parts of the Bondi to
-            Coogee coastal track in Sydney's Eastern Suburbs. The photos on this
-            page show some scenic parts of this track.
+            organised sports, I still enjoy running. Road running is my
+            favourite form of exercise and I enjoy training to improve my 5km
+            and 10km times. When I can, I enjoy running along the Bondi to
+            Coogee coastal track in Sydney. Here are some of my photographs of
+            the scenic views along this track.
           </p>
         </div>
       </div>
