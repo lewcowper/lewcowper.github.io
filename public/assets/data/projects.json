@@ -29,5 +29,16 @@
     ],
     "languages": ["C"],
     "frameworksLibraries": []
+  },
+  {
+    "id": 3,
+    "title": "VC Compiler",
+    "description": "Implementation of a compiler in Java to translate a variant of C, VC, into executable Java bytecode.",
+    "details": [
+      "Completed for COMP3131/9102 Programming Languages and Compilers at UNSW.",
+      "This project involved the implementation of lexical analysis, syntax analysis, semantic analysis and code generation functionalities of a compiler in Java to translate a variant of C, VC, into executable Java bytecode."
+    ],
+    "languages": ["Java"],
+    "frameworksLibraries": []
   }
 ]

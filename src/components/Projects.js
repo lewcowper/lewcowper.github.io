@@ -49,6 +49,15 @@ const Projects = () => {
               langIcons={[<SiC />]}
               libFraIcons={[]}
             />
+            <Project
+              projectData={
+                projectsData.filter(
+                  (data) => data.title === 'VC Compiler'
+                )[0]
+              }
+              langIcons={[<FaJava />]}
+              libFraIcons={[]}
+            />
           </div>
         </div>
       </div>
