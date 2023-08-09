@@ -8,6 +8,9 @@ import {
   SiNextdotjs,
   SiSpringboot,
   SiBootstrap,
+  SiPython,
+  SiPandas,
+  SiScipy,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { SiC, SiTailwindcss } from 'react-icons/si';
@@ -23,11 +26,11 @@ const Projects = () => {
             <Project
               projectData={
                 projectsData.filter(
-                  (data) => data.title === 'Personal Website'
+                  (data) => data.title === 'Suite of predictive models'
                 )[0]
               }
-              langIcons={[<SiJavascript />, <SiHtml5 />]}
-              libFraIcons={[<SiNextdotjs />, <SiReact />, <SiTailwindcss />]}
+              langIcons={[<SiPython />, <SiJavascript />]}
+              libFraIcons={[<SiPandas />, <SiScipy />]}
             />
             <Project
               projectData={
@@ -38,8 +41,24 @@ const Projects = () => {
               langIcons={[<SiJavascript />, <SiHtml5 />, <SiCss3 />]}
               libFraIcons={[<SiReact />, <SiBootstrap />]}
             />
+            <Project
+              projectData={
+                projectsData.filter((data) => data.title === 'VC Compiler')[0]
+              }
+              langIcons={[<FaJava />]}
+              libFraIcons={[]}
+            />
           </div>
           <div className="flex flex-col gap-4">
+            <Project
+              projectData={
+                projectsData.filter(
+                  (data) => data.title === 'Personal Website'
+                )[0]
+              }
+              langIcons={[<SiJavascript />, <SiHtml5 />]}
+              libFraIcons={[<SiNextdotjs />, <SiReact />, <SiTailwindcss />]}
+            />
             <Project
               projectData={
                 projectsData.filter(
@@ -47,15 +66,6 @@ const Projects = () => {
                 )[0]
               }
               langIcons={[<SiC />]}
-              libFraIcons={[]}
-            />
-            <Project
-              projectData={
-                projectsData.filter(
-                  (data) => data.title === 'VC Compiler'
-                )[0]
-              }
-              langIcons={[<FaJava />]}
               libFraIcons={[]}
             />
           </div>
