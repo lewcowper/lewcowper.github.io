@@ -6,42 +6,43 @@
   },
   {
     "id": 1,
-    "file": "gordons",
-    "name": "Gordons Bay"
+    "file": "tamarama",
+    "name": "Tamarama"
   },
   {
     "id": 2,
-    "file": "bronte-n",
-    "name": "Bronte Beach"
-  },
-  {
-    "id": 3,
-    "file": "clovelly",
-    "name": "Clovelly Beach"
-  },
-  {
-    "id": 4,
-    "file": "tamarama",
-    "name": "Tamarama Beach"
-  },
-  {
-    "id": 5,
     "file": "coogee",
     "name": "Coogee Beach"
   },
   {
-    "id": 6,
+    "id": 3,
+    "file": "mackenzies",
+    "name": "Mackenzies Bay"
+  },
+  {
+    "id": 4,
+    "file": "bronte",
+    "name": "Bronte"
+  },
+  {
+    "id": 5,
     "file": "bondi-s",
-    "name": "Bondi Beach"
+    "name": "Bondi"
+  },
+  {
+    "id": 6,
+    "file": "gordons",
+    "name": "Gordons Bay"
   },
   {
     "id": 7,
     "file": "bondi-n",
     "name": "Bondi Beach"
   },
+
   {
     "id": 8,
-    "file": "mackenzies",
-    "name": "Mackenzies Bay"
+    "file": "bronte-n",
+    "name": "Bronte Beach"
   }
 ]

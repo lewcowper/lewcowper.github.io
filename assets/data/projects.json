@@ -40,5 +40,16 @@
     ],
     "languages": ["Java"],
     "frameworksLibraries": []
+  },
+  {
+    "id": 4,
+    "title": "Suite of predictive models",
+    "description": "Development of a suite predictive models and data preparation processes in Python and JavaScript for a client.",
+    "details": [
+      "Designed, implemented, tested and deployed numerous statistical models in Python with Pandas and SciPy to predict the outcomes of scheduled events.",
+      "Designed, implemented and deployed data preparation processes in Python and JavaScript to collect, clean and format all data required for the statistical models."
+    ],
+    "languages": ["Python, JavaScript"],
+    "frameworksLibraries": ["Pandas, SciPy"]
   }
 ]
