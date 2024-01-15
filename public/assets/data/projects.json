@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "Personal Website",
-    "description": "A simple website to share information about myself, including my projects and interests.",
+    "description": "A simple, responsive website to share information about myself, including my projects and interests.",
     "details": ["This project (this website) is a statically generated website built with Next.js and conveniently hosted on GitHub Pages.", "Components are built using React and styled with Tailwind CSS."],
     "languages": ["JavaScript", "HTML"],
     "frameworksLibraries": ["Next.js", "React", "Tailwind CSS"]
@@ -10,7 +10,7 @@
   {
     "id": 1,
     "title": "Meal Recommendation System",
-    "description": "A full-stack web application which enables users to explore and share meal recipes.",
+    "description": "A full stack web application which enables users to explore and share meal recipes.",
     "details": [
       "Completed in small teams for COMP9900 Information Technology Project at UNSW.",
       "This project involved the design and construction of a single page application frontend built with React and Bootstrap, and a backend built with Flask and SQLite.",
@@ -44,12 +44,23 @@
   {
     "id": 4,
     "title": "Suite of predictive models",
-    "description": "Development of a suite predictive models and data preparation processes in Python and JavaScript for a client.",
+    "description": "A suite of data preparation processes and predictive models to estimate the fair value of alternative assets.",
     "details": [
-      "Designed, implemented, tested and deployed numerous statistical models in Python with Pandas and SciPy to predict the outcomes of scheduled events.",
-      "Designed, implemented and deployed data preparation processes in Python and JavaScript to collect, clean and format all data required for the statistical models."
+      "Designed, implemented, tested and deployed numerous statistical models in Python with Pandas and SciPy to estimate the fair value of a range of alternative assets.",
+      "Designed, implemented and deployed data preparation processes in Python with Pandas to collect, clean and format all data required for the statistical models."
     ],
-    "languages": ["Python, JavaScript"],
+    "languages": ["Python"],
     "frameworksLibraries": ["Pandas, SciPy"]
+  },
+  {
+    "id": 5,
+    "title": "Alternative asset market data collator and viewer",
+    "description": "A full stack web application to collate alternative asset market data and present it to traders to inform investment decisions.",
+    "details": [
+      "Developed a backend web application to fetch and process alternative asset market data from numerous sources and serve it to the frontend web application using Python and FastAPI.",
+      "Designed and implemented a user interface with TypeScript, React and Tailwind CSS for traders to view market data from numerous sources side-by-side to inform investment decisions."
+    ],
+    "languages": ["Python, TypeScript, HTML"],
+    "frameworksLibraries": ["FastAPI, React, Tailwind CSS"]
   }
 ]

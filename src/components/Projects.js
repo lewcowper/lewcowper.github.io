@@ -2,6 +2,7 @@ import Project from './Project';
 
 import {
   SiJavascript,
+  SiTypescript,
   SiHtml5,
   SiCss3,
   SiReact,
@@ -11,9 +12,11 @@ import {
   SiPython,
   SiPandas,
   SiScipy,
+  SiFastapi,
+  SiC,
+  SiTailwindcss,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
-import { SiC, SiTailwindcss } from 'react-icons/si';
 
 import projectsData from '../../public/assets/data/projects.json';
 
@@ -50,6 +53,17 @@ const Projects = () => {
             />
           </div>
           <div className="flex flex-col gap-4">
+            <Project
+              projectData={
+                projectsData.filter(
+                  (data) =>
+                    data.title ===
+                    'Alternative asset market data collator and viewer'
+                )[0]
+              }
+              langIcons={[<SiPython />, <SiTypescript />, <SiHtml5 />]}
+              libFraIcons={[<SiFastapi />, <SiReact />, <SiTailwindcss />]}
+            />
             <Project
               projectData={
                 projectsData.filter(
