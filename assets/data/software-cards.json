@@ -1,10 +1,10 @@
 [
   {
     "title": "Languages",
-    "bullets": ["Java", "Python", "JavaScript", "HTML & CSS"]
+    "bullets": ["Python", "JavaScript", "Java", "TypeScript"]
   },
   {
     "title": "Frameworks/Libraries",
-    "bullets": ["Spring Boot", "Pandas", "React", "Tailwind CSS"]
+    "bullets": ["Pandas", "Spring Boot", "React", "FastAPI"]
   }
 ]
